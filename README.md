@@ -8,3 +8,8 @@ Dev set and test set is manually checked.
 
 There are total 63 files (54 tar and 9 lexicon/txt files):
 In order to downlaod a particular tar file, you can call the below python script.
+
+```
+from datasets import load_dataset, DownloadConfig
+dataset = load_dataset("dataset.py", name="mt_dev", download_config=DownloadConfig(cache_dir="downloads"))
+```
