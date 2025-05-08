@@ -11,5 +11,6 @@ In order to downlaod a particular tar file, you can call the below python script
 
 ```
 from datasets import load_dataset, DownloadConfig
-dataset = load_dataset("dataset.py", name="mt_dev", download_config=DownloadConfig(cache_dir="downloads"))
+dataset = load_dataset("dataset.py", name="mt_dev", \
+download_config=DownloadConfig(cache_dir="downloads"))
 ```
