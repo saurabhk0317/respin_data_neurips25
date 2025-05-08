@@ -1,0 +1,33 @@
+{
+	"@context": {
+	  "@language": "en",
+	  "@vocab": "https://schema.org/",
+	  "cr": "http://mlcommons.org/croissant/",
+	  "dct": "http://purl.org/dc/terms/"
+	},
+	"@type": "https://schema.org/Dataset",
+	"name": "IISc_RESPIN_S1_SPEECH_CORPUS",
+	"description": "RESPIN dataset archive stored on E2E object storage for neurips review.",
+	"license": "https://choosealicense.com/licenses/apache-2.0/",
+	"url": "git@github.com:saurabhk0317/respin_data_neurips25.git",
+	"distribution": [
+	  {
+		"@type": "https://schema.org/FileObject",
+		"name": "IISc_RESPIN_test_bh_archive",
+		"description": "Tar archive containing Bhojpuri RESPIN test data.",
+		"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz",
+		"encodingFormat": "application/gzip",
+		"sha256": "REPLACE_WITH_ACTUAL_SHA256_HASH"
+	  }
+	],
+	"conformsTo": "http://mlcommons.org/croissant/1.1",
+	"keywords": [
+	  "RESPIN",
+	  "speech",
+	  "Bhojpuri",
+	  "audio",
+	  "tar.gz",
+	  "India",
+	  "IISc"
+	]
+  }
