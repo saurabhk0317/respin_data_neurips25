@@ -52,7 +52,7 @@ DatasetDict({
 })
 ```
 
-### Access a Sample Record
+#### Access a Sample Record
 ```python
 >>> print(dataset['validation'][0])  # or: print(dataset[0]) depending on split format
 {
