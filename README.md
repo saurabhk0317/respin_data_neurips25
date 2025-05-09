@@ -25,7 +25,6 @@ dataset = load_dataset(
 	path="dataset.py",             # Path to your local dataset loading script
 	name="mt_dev",                 # Must match a BUILDER_CONFIG name (e.g., "mt_dev", "bh_train_clean", etc.)
 	split="validation",            # Optional: specify 'train', 'validation', or 'test'
-	cache_dir="hf_cache",          # Optional: cache directory for shared use across projects
 	download_config=DownloadConfig(
 		cache_dir="downloads",     # Local cache directory for downloaded .tar.gz files
 		resume_download=True,      # Resume partial downloads if interrupted
