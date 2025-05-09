@@ -76,3 +76,79 @@ DatasetDict({
 - Ensure you have sufficient storage space before downloading the dataset.
 - Use the `resume_download` option to handle interruptions during downloads.
 - For more details, refer to the dataset loading script (`dataset.py`).
+
+### Dataset URLs
+
+Below are the download links for the complete dataset, organized by language:
+
+#### Bengali
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_dev_bn.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_dev_bn.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_lexicon_bn.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_lexicon_bn.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_small.tar.gz)
+
+#### Bhojpuri
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_dev_bh.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_dev_bh.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_lexicon_bh.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_lexicon_bh.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_small.tar.gz)
+
+#### Chhattisgarhi
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_dev_ch.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_dev_ch.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_lexicon_ch.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_lexicon_ch.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_seminoisy.tar.gz)
+- [Train - Small](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_small.tar.gz)
+
+#### Hindi
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_dev_hi.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_dev_hi.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_lexicon_hi.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_lexicon_hi.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_small.tar.gz)
+
+#### Kannada
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_dev_kn.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_dev_kn.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_lexicon_kn.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_lexicon_kn.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_small.tar.gz)
+
+#### Magahi
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_dev_mg.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_dev_mg.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_lexicon_mg.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_lexicon_mg.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_small.tar.gz)
+
+#### Maithili
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_dev_mt.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_dev_mt.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_lexicon_mt.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_lexicon_mt.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_small.tar.gz)
+
+#### Marathi
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_dev_mr.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_dev_mr.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_lexicon_mr.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_lexicon_mr.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_small.tar.gz)
+
+#### Telugu
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_dev_te.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_dev_te.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_lexicon_te.txt](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_lexicon_te.txt)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_clean.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_clean.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_noisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_noisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_seminoisy.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_seminoisy.tar.gz)
+- [https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_small.tar.gz](https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_small.tar.gz)
