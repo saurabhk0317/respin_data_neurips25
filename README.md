@@ -74,7 +74,6 @@ DatasetDict({
 ## Notes
 
 - Ensure you have sufficient storage space before downloading the dataset.
-- Use the `resume_download` option to handle interruptions during downloads.
 - For more details, refer to the dataset loading script (`dataset.py`).
 
 ### Dataset URLs
