@@ -11,14 +11,392 @@
 	"license": "https://choosealicense.com/licenses/apache-2.0/",
 	"url": "git@github.com:saurabhk0317/respin_data_neurips25.git",
 	"distribution": [
-	  {
-		"@type": "https://schema.org/FileObject",
-		"name": "IISc_RESPIN_test_bh_archive",
-		"description": "Tar archive containing Bhojpuri RESPIN test data.",
-		"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz",
-		"encodingFormat": "application/gzip",
-		"sha256": "REPLACE_WITH_ACTUAL_SHA256_HASH"
-	  }
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_bh_archive",
+			"description": "Tar archive containing Bhojpuri RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "REPLACE_WITH_ACTUAL_SHA256_HASH"
+		}, 
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_bn",
+			"description": "Bengali RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_dev_bn.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_bn",
+			"description": "Bengali RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_lexicon_bn.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bn_clean",
+			"description": "Bengali RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bn_noisy",
+			"description": "Bengali RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bn_seminoisy",
+			"description": "Bengali RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bn_small",
+			"description": "Bengali RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_train_bn_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_bh",
+			"description": "Bhojpuri RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_dev_bh.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_bh",
+			"description": "Bhojpuri RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_lexicon_bh.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bh_clean",
+			"description": "Bhojpuri RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bh_noisy",
+			"description": "Bhojpuri RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bh_seminoisy",
+			"description": "Bhojpuri RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_bh_small",
+			"description": "Bhojpuri RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_train_bh_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_ch",
+			"description": "Chhattisgarhi RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_dev_ch.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_ch",
+			"description": "Chhattisgarhi RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_lexicon_ch.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_ch_clean",
+			"description": "Chhattisgarhi RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_ch_noisy",
+			"description": "Chhattisgarhi RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_ch_seminoisy",
+			"description": "Chhattisgarhi RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_ch_small",
+			"description": "Chhattisgarhi RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_train_ch_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_hi",
+			"description": "Hindi RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_dev_hi.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_hi",
+			"description": "Hindi RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_lexicon_hi.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_hi_clean",
+			"description": "Hindi RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_hi_noisy",
+			"description": "Hindi RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_hi_seminoisy",
+			"description": "Hindi RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_hi_small",
+			"description": "Hindi RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_train_hi_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_kn",
+			"description": "Kannada RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_dev_kn.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_kn",
+			"description": "Kannada RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_lexicon_kn.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_kn_clean",
+			"description": "Kannada RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_kn_noisy",
+			"description": "Kannada RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_kn_seminoisy",
+			"description": "Kannada RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_kn_small",
+			"description": "Kannada RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_train_kn_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_mg",
+			"description": "Magahi RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_dev_mg.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_mg",
+			"description": "Magahi RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_lexicon_mg.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mg_clean",
+			"description": "Magahi RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mg_noisy",
+			"description": "Magahi RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mg_seminoisy",
+			"description": "Magahi RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mg_small",
+			"description": "Magahi RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_train_mg_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_mt",
+			"description": "Maithili RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_dev_mt.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_mt",
+			"description": "Maithili RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_lexicon_mt.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mt_clean",
+			"description": "Maithili RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mt_noisy",
+			"description": "Maithili RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mt_seminoisy",
+			"description": "Maithili RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mt_small",
+			"description": "Maithili RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_train_mt_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_mr",
+			"description": "Marathi RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_dev_mr.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_mr",
+			"description": "Marathi RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_lexicon_mr.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mr_clean",
+			"description": "Marathi RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mr_noisy",
+			"description": "Marathi RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mr_seminoisy",
+			"description": "Marathi RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_mr_small",
+			"description": "Marathi RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_train_mr_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		}
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_dev_te",
+			"description": "Telugu RESPIN development data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_dev_te.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_lexicon_te",
+			"description": "Telugu RESPIN lexicon file.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_lexicon_te.txt",
+			"encodingFormat": "text/plain"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_te_clean",
+			"description": "Telugu RESPIN clean training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_clean.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_te_noisy",
+			"description": "Telugu RESPIN noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_noisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_te_seminoisy",
+			"description": "Telugu RESPIN semi-noisy training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_seminoisy.tar.gz",
+			"encodingFormat": "application/gzip"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_train_te_small",
+			"description": "Telugu RESPIN small training data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_train_te_small.tar.gz",
+			"encodingFormat": "application/gzip"
+		}
 	],
 	"conformsTo": "http://mlcommons.org/croissant/1.1",
 	"keywords": [
