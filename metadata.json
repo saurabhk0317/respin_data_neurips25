@@ -6,7 +6,7 @@
 	  "dct": "http://purl.org/dc/terms/"
 	},
 	"@type": "https://schema.org/Dataset",
-	"name": "IISc_RESPIN_S1_SPEECH_CORPUS",
+	"name": "IISc_RESPIN_S1.0_SPEECH_CORPUS",
 	"description": "RESPIN dataset archive stored on E2E object storage for neurips review.",
 	"license": "https://choosealicense.com/licenses/apache-2.0/",
 	"url": "git@github.com:saurabhk0317/respin_data_neurips25.git",
