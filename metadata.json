@@ -500,6 +500,87 @@
 			"encodingFormat": "application/gzip",
 			"sha256": "66f63cbcc8571ccd450e3f1df3405ba3104be25c6f9832bfef5c1d36db9ae410",
 			"md5": "d2e859dd1a280e8c4229001a5a7bbee8"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_bh",
+			"description": "Bhojpuri RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bhojpuri/IISc_RESPIN_test_bh.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "6458374042d3e47a00df2a57335f0d8399296a7db533cc6e43538805412fcbfc",
+			"md5": "fb8952d196bfc271a2b2046c7031cb76"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_ch",
+			"description": "Chhattisgarhi RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/chhattisgarhi/IISc_RESPIN_test_ch.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "6d66bc43f6954701977e324753ea8cb3d93e9d37c2f481b05367f76aa782a202",
+			"md5": "6e1f63c50b07de035a6183265be63324"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_te",
+			"description": "Telugu RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/telugu/IISc_RESPIN_test_te.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "5d2851cdc8594e5ccfc09f56d1e3f30b637806f18dc49a26e8cc6a8074b4602f",
+			"md5": "9091c2f18ff226a41b27116a54ed4378"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_mg",
+			"description": "Magahi RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/magahi/IISc_RESPIN_test_mg.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "2bcb84d76e18255c6f1968fbfd18617c197a9fe2302ac288dd2f92d48e22e92c",
+			"md5": "debeff7ac2b0ae4ad1ef3be543ffcd86"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_kn",
+			"description": "Kannada RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/kannada/IISc_RESPIN_test_kn.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "fe055213537e78b681971a507d66e8aad98550ec38b049d6b0493bea62847389",
+			"md5": "bfd9bfa8d9b7341d5a5ffd0dc097973e"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_mt",
+			"description": "Maithili RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/maithili/IISc_RESPIN_test_mt.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "62dbc935547de0a31a017604a8498febcb4f2320cec251ee9fb3ed37f5610b21",
+			"md5": "a252c955c179bec818af2bbf1d6a26e3"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_bn",
+			"description": "Bengali RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/bengali/IISc_RESPIN_test_bn.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "d4f1af686d0118777e04f36ab2d8348cab43ba0e6a44c5ff735345ab5de84f11",
+			"md5": "c2c55dda4501627aa271cf0a426573a2"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_hi",
+			"description": "Hindi RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/hindi/IISc_RESPIN_test_hi.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "4ca10df9f42f259cbb2515321e865fb7021a95aecd8b02f00aff9599eb946d5a",
+			"md5": "c739c78de114b45fe4cccdfc18defd4a"
+		},
+		{
+			"@type": "https://schema.org/FileObject",
+			"name": "IISc_RESPIN_test_mr",
+			"description": "Marathi RESPIN test data.",
+			"contentUrl": "https://objectstore.e2enetworks.net/respin-dataset-neurips/respin/marathi/IISc_RESPIN_test_mr.tar.gz",
+			"encodingFormat": "application/gzip",
+			"sha256": "8579a4a2a0377094accb5f1ed70af764b370aa41457ba0030babb8348be37cef",
+			"md5": "830d43a40597d0dd0edacf99a053751e"
 		}
 	],
 	"conformsTo": "http://mlcommons.org/croissant/1.1",
