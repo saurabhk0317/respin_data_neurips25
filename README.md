@@ -6,10 +6,10 @@ This repository provides links to the RESPIN S1.0 Speech Corpus. Due to its larg
 
 ## Dataset Overview
 
-- **Total Files**: 54 (45 tar files + 9 lexicon/txt files)
+- **Total Files**: 63 (54 tar files + 9 lexicon/txt files)
 - **Languages**: 9
 - **Dialects**: 38
-- **Data Splits**: Small, Clean, Seminoisy, Noisy, Dev
+- **Data Splits**: Small, Clean, Seminoisy, Noisy, Dev, Test
 
 ---
 
