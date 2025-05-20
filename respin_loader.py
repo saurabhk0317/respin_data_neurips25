@@ -78,11 +78,39 @@ class RESPINDataset:
     def load(self, split: str) -> dict:
         all_data = {}
 
+        # Full category: train, dev, test
         if split in {"train", "dev", "test"}:
             subsets = self._matching_subsets(split)
             print(f"🔍 Found {len(subsets)} '{split}' subsets: {[s.split('_')[-1] for s in subsets]}")
+
+        # Language-wise group e.g. train_bh → all Bhojpuri train subsets
+        elif split.startswith("train_") and len(split.split("_")) == 2:
+            lang = split.split("_")[1]
+            subsets = [
+                dist["name"] for dist in self.distributions
+                if dist["name"].startswith(f"IISc_RESPIN_train_{lang}_")
+            ]
+            if not subsets:
+                raise ValueError(f"No train subsets found for language '{lang}'")
+            print(f"🔍 Found {len(subsets)} training subsets for language '{lang}'")
+
+        # Slab-wise group e.g. train_clean → all clean train subsets
+        elif split.startswith("train_") and len(split.split("_")) == 2:
+            slab = split.split("_")[1]
+            subsets = [
+                dist["name"] for dist in self.distributions
+                if dist["name"].startswith("IISc_RESPIN_train_") and dist["name"].endswith(f"_{slab}")
+            ]
+            if not subsets:
+                raise ValueError(f"No training subsets found for slab '{slab}'")
+            print(f"🔍 Found {len(subsets)} training subsets for slab '{slab}'")
+
+        # Exact match like dev_bn or train_ch_clean
         else:
-            subsets = [s for s in self._matching_subsets(split.split("_")[0]) if s.endswith(split)]
+            subsets = [dist["name"] for dist in self.distributions if dist["name"].endswith(split)]
+            if not subsets:
+                raise ValueError(f"No matching subset found for split '{split}'")
+            print(f"🔍 Found 1 subset for '{split}'")
 
         for subset_name in subsets:
             print(f"\n📥 Processing subset: {subset_name}")
@@ -104,3 +132,4 @@ class RESPINDataset:
             print(f"✅ Loaded {len(data)} records from {meta_path}")
 
         return all_data
+
