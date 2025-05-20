@@ -64,8 +64,8 @@ class RESPINDataset:
         
         print(f"📂 Loading data from {extracted_folder}")
         
-        suffix = split.split("_", 1)[-1]
-        meta_path = extracted_folder / f"meta_{split}.json"
+        suffix = "_".join(extracted_folder.name.split("/")[-1].split("_")[2:])
+        meta_path = extracted_folder / f"meta_{suffix}.json"
         print(f"📂 Loading metadata from {meta_path}")
         
         if not meta_path.exists():
