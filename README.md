@@ -1,114 +1,129 @@
 # RESPIN S1.0 Speech Corpus
 
-This repository provides links to the RESPIN S1.0 Speech Corpus. Due to its large size (>1TB), the dataset is divided into smaller tar files. It includes data for **9 languages** and **38 dialects**, with each language containing 5 tar files and a lexicon file. The dataset is categorized into **small**, **clean**, **semi-noisy**, and **noisy** splits, along with **dev** and **test** sets. The dev and test sets have been manually verified.
+Welcome! This repository provides access to the **RESPIN-S1.0 Speech Corpus** — a large-scale multilingual dataset spanning **9 languages** and **38 dialects**. Due to its size (>1TB), the dataset is split into smaller tar files for easier download and management.
 
 ---
 
-## Dataset Overview
+## 📊 Dataset Overview
 
-- **Total Files**: 63 (54 tar files + 9 lexicon/txt files)
-- **Languages**: 9
-- **Dialects**: 38
-- **Data Splits**: Small, Clean, Seminoisy, Noisy, Dev, Test
+- **Total Files:** 63 (54 tar files + 9 lexicon files)
+- **Languages:** 9
+- **Dialects:** 38
+- **Data Splits:** `small`, `clean`, `seminoisy`, `noisy`, `dev`, `test`
+- **Verification:** Dev and test sets are manually verified
 
----
-
-## Steps to Download the Dataset
-
-# RESPIN Dataset Loader
-
-A HuggingFace-style lightweight loader for the RESPIN multilingual speech dataset using Croissant metadata.
+Each language includes:
+- 6 tar files (for different splits)
+- 1 lexicon file
 
 ---
 
-## 🚀 Features
+## ⬇️ Steps to Download the Dataset
 
-- ✅ Download individual or grouped RESPIN subsets
-- ✅ Verifies SHA256 checksums and handles corrupted downloads
-- ✅ Extracts and loads metadata (`meta_*.json`) with absolute `wav_path`s
-- ✅ HuggingFace-style `load("train_bh")`, `load("test")`, etc.
-- ✅ No external dependencies (uses Python standard library)
+See the [Dataset URLs](#dataset-urls) section below for direct download links, organized by language and split.
 
 ---
 
-## 📦 Installation
+## RESPIN Dataset Loader
 
-No installation needed — just copy `RESPINDataset` into your Python script or module.
+A lightweight, HuggingFace-style loader for RESPIN, using Croissant metadata.
 
 ---
 
-## 📝 Example Usage
+### 🚀 Features
+
+- Download individual or grouped RESPIN subsets
+- Verifies SHA256 checksums and handles corrupted downloads
+- Extracts and loads metadata (`meta_*.json`) with absolute `wav_path`s
+- HuggingFace-style API: `load("train_bh")`, `load("test")`, etc.
+- **No external dependencies** (uses only Python standard library)
+
+---
+
+### 📦 Installation
+
+No installation required — simply copy the `RESPINDataset` class into your Python script or module.
+
+---
+
+### 📝 Example Usage
 
 ```python
 from respin_loader import RESPINDataset  # or paste RESPINDataset class directly
 
 # Initialize the dataset loader with metadata and cache directory
 dataset = RESPINDataset(
-    metadata_path="metadata.json",
-    cache_dir="path/to/download/directory/RESPIN_data"
+	metadata_path="metadata.json",
+	cache_dir="path/to/download/directory/RESPIN_data"
 )
 ```
 
-### ✅ Load a single subset
+#### ✅ Load a single subset
+
 ```python
 # Load development set for Chhattisgarhi
 data = dataset.load("dev_ch")
 ```
 
-### ✅ Load all dev sets
+#### ✅ Load all dev sets
+
 ```python
-# Load development set for Chhattisgarhi
-data = dataset.load("dev_ch")
+data = dataset.load("dev")
 ```
 
-### ✅ Load all train subsets
+#### ✅ Load all train subsets
+
 ```python
-# Load development set for Chhattisgarhi
-data = dataset.load("dev_ch")
+data = dataset.load("train")
 ```
 
-### ✅ Load all train subsets for a specific language
+#### ✅ Load all train subsets for a specific language
+
 ```python
-# Load development set for Chhattisgarhi
-data = dataset.load("dev_ch")
+# All Bhojpuri training subsets: clean, noisy, seminoisy, small
+data = dataset.load("train_bh")
 ```
 
-#### Inspect the Dataset
-```python
->>> print(dataset)
-DatasetDict({
-	validation: Dataset({
-		features: ['utterance_id', 'text', 'wav_path', 'dialect', 'gender', 'age_group', 'domain', 'speaker_id', 'pincode', 'duration'],
-		num_rows: 1409
-	})
-})
-```
+---
 
-#### Access a Sample Record
-```python
->>> print(dataset['validation'][0])  # or: print(dataset[0]) depending on split format
+### 📂 Data Format
+
+Each entry in the loaded dataset looks like:
+
+```json
 {
-	'utterance_id': 'IISc_RESPIN_mt_D1_80218_852112_M_BANK_804004_80002378',
-	'text': 'गाड़ीक बीमा एकटा समझौता छै गाड़ी मालिक आ इंश्योरेंस कंपनी केर बीचक',
-	'wav_path': 'downloads/mt/IISc_RESPIN_dev_mt/D1/80218/IISc_RESPIN_mt_D1_80218_852112_M_BANK_804004_80002378.wav',
-	'dialect': 'D1',
-	'gender': 'MALE',
-	'age_group': '25-30',
-	'domain': 'Banking',
-	'speaker_id': '80218',
-	'pincode': '852112',
-	'duration': 9.100000381469727
+  "age_group": "41-45",
+  "dialect": "D1",
+  "domain": "Banking",
+  "duration": 12.07,
+  "gender": "MALE",
+  "lid": "ch",
+  "pincode": "495001",
+  "speaker_id": "30060",
+  "text": "सब्जी भाजी के भाव ह आज...",
+  "text_id": "303070",
+  "utterance_id": "30000010",
+  "wav_path": "/absolute/path/to/.../D1/30060/IISc_RESPIN_ch_....wav"
 }
 ```
 
 ---
 
-## Notes
+### 💡 Notes
 
-- Ensure you have sufficient storage space before downloading the dataset.
-- For more details, refer to the dataset loading script (`dataset.py`).
+- Files are only downloaded once unless the checksum fails.
+- Corrupt or partial downloads are deleted and restarted automatically.
+- `.tar.gz` archives are extracted directly into the cache directory, each containing:
+  - A folder named like the archive (e.g., `IISc_RESPIN_train_bn_clean/`)
+  - A `meta_*.json` file inside
+  - A README.md file inside
+- `wav_path` is automatically updated to the absolute file path for convenience.
+- Fully compatible with standard Python code — **no external dependencies required**.
 
-### Dataset URLs
+---
+
+
+## Dataset URLs
 
 Below are the download links for the complete dataset, organized by language:
 
