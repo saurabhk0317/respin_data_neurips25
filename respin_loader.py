@@ -30,7 +30,17 @@ class RESPINDataset:
                 if not tar_path.exists():
                     self.cache_dir.mkdir(parents=True, exist_ok=True)
                     print(f"⬇️  Downloading: {url}")
-                    urllib.request.urlretrieve(url, tar_path)
+                    def _progress_hook(block_num, block_size, total_size):
+                        downloaded = block_num * block_size
+                        percent = min(downloaded / total_size * 100, 100) if total_size > 0 else 0
+                        bar_len = 40
+                        filled_len = int(bar_len * percent // 100)
+                        bar = '=' * filled_len + '-' * (bar_len - filled_len)
+                        print(f"\r    [{bar}] {percent:5.1f}% ({downloaded // (1024*1024)}MB/{total_size // (1024*1024)}MB)", end='', flush=True)
+                        if downloaded >= total_size:
+                            print()  # Newline after done
+
+                    urllib.request.urlretrieve(url, tar_path, reporthook=_progress_hook)
 
                 print(f"✅ Verifying SHA256...")
                 actual_sha = self._compute_sha256(tar_path)
