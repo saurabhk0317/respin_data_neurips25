@@ -15,30 +15,63 @@ This repository provides links to the RESPIN S1.0 Speech Corpus. Due to its larg
 
 ## Steps to Download the Dataset
 
-To download a specific tar file, use the following Python script:
+# RESPIN Dataset Loader
 
-```python
-from datasets import load_dataset, DownloadConfig
-
-# Load a specific subset (e.g., Maithili dev) of the RESPIN dataset
-dataset = load_dataset(
-	path="dataset.py",             # Path to your local dataset loading script
-	name="mt_dev",                 # Must match a BUILDER_CONFIG name (e.g., "mt_dev", "bh_train_clean", etc.)
-	split="validation",            # Optional: specify 'train', 'validation', or 'test'
-	download_config=DownloadConfig(
-		cache_dir="downloads",     # Local cache directory for downloaded .tar.gz files
-		resume_download=True,      # Resume partial downloads if interrupted
-		use_etag=True              # Use ETag to avoid unnecessary re-downloads
-	),
-	trust_remote_code=True,        # Required for loading local dataset.py
-	keep_in_memory=False,          # Set True to load the full dataset into memory (default False)
-	verification_mode="no_checks"  # Faster load if you trust the data
-)
-```
+A HuggingFace-style lightweight loader for the RESPIN multilingual speech dataset using Croissant metadata.
 
 ---
 
-### Example Usage
+## 🚀 Features
+
+- ✅ Download individual or grouped RESPIN subsets
+- ✅ Verifies SHA256 checksums and handles corrupted downloads
+- ✅ Extracts and loads metadata (`meta_*.json`) with absolute `wav_path`s
+- ✅ HuggingFace-style `load("train_bh")`, `load("test")`, etc.
+- ✅ No external dependencies (uses Python standard library)
+
+---
+
+## 📦 Installation
+
+No installation needed — just copy `RESPINDataset` into your Python script or module.
+
+---
+
+## 📝 Example Usage
+
+```python
+from respin_loader import RESPINDataset  # or paste RESPINDataset class directly
+
+# Initialize the dataset loader with metadata and cache directory
+dataset = RESPINDataset(
+    metadata_path="metadata.json",
+    cache_dir="path/to/download/directory/RESPIN_data"
+)
+```
+
+### ✅ Load a single subset
+```python
+# Load development set for Chhattisgarhi
+data = dataset.load("dev_ch")
+```
+
+### ✅ Load all dev sets
+```python
+# Load development set for Chhattisgarhi
+data = dataset.load("dev_ch")
+```
+
+### ✅ Load all train subsets
+```python
+# Load development set for Chhattisgarhi
+data = dataset.load("dev_ch")
+```
+
+### ✅ Load all train subsets for a specific language
+```python
+# Load development set for Chhattisgarhi
+data = dataset.load("dev_ch")
+```
 
 #### Inspect the Dataset
 ```python
